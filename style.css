@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+}
+* {
+  scroll-behavior: smooth;
+}
+nav {
+  height: 4vmax;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  z-index: 10000;
+}
+
+.left {
+  width: 20%;
+  display: flex;
+
+  justify-content: center;
+}
+.left > a {
+  text-decoration: none;
+  color: crimson;
+  font-size: 2vmax;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.mid {
+  width: 60%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+
+.mid > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid > a:hover {
+  border-bottom: 2px solid crimson;
+  color: crimson;
+}
+.right {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.right > img {
+  width: 2.5vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+.home {
+  display: flex;
+  height: 90vh;
+  background-image: radial-gradient(rgb(230, 221, 255), rgb(184, 184, 223));
+}
+
+.container {
+  width: 100%;
+}
+
+#rightContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#rightContainer > img {
+  margin-right: 7vmax;
+  filter: drop-shadow(0 0 20px black);
+}
+
+#leftContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 3vmax;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+#leftContainer > h1 {
+  font-size: 5vmax;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#leftContainer > h2 {
+  margin-top: -8%;
+  font-size: 2vmax;
+  font-family: sans-serif;
+}
+#leftContainer > p {
+  margin-left: 2%;
+  font-size: 1.2vmax;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#leftContainer > button {
+  width: 11vmax;
+  padding: 0.6vmax;
+  margin-left: 2%;
+  border-radius: 2vmax;
+  border: none;
+  background-color: crimson;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+#leftContainer > button:hover {
+  background-color: rgb(177, 23, 54);
+}
+
+/* ------------------------------------ */
+
+#products > h1 {
+  text-align: center;
+  margin: 5vmax auto;
+  font-size: 2.5vmax;
+  border-bottom: 5px solid crimson;
+  padding: 1vmax;
+  width: 25vw;
+}
+
+.productsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  max-width: 80vw;
+  margin: auto;
+}
+
+/* ---------------------- */
+.product {
+  transition: all 0.3s;
+  cursor: pointer;
+  height: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+}
+.product > img {
+  width: 20vmax;
+}
+
+.product > h4 {
+  margin: 2%;
+}
+.product > h5 {
+  margin: 0px;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+/* --------------------------------- */
+
+footer {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.leftFooter {
+  width: 20%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+.leftFooter > h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.leftFooter > p {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.leftFooter > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+.midFooter {
+  width: 60%;
+
+  text-align: center;
+}
+
+.midFooter > h1 {
+  font-size: 4vmax;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: crimson;
+}
+.midFooter > p {
+  max-width: 60%;
+
+  margin: 1vmax auto;
+}
+
+.rightFooter {
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightFooter > h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4vmax;
+  text-decoration: underline;
+}
+.rightFooter > a {
+  text-decoration: none;
+  font-size: 1.3vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  margin: 0.5vmax;
+}
